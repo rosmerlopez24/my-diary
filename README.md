@@ -1,5 +1,5 @@
 # Personal Diary
-My personal diary created with Python and Django in order to write my ideas and thoughts.
+My personal diary created with Python and Django in order to write my ideas and thoughts, you can use this as a template y and extend the functionality of this web application. Feel free to do it
 
 # Dependencies installation
 Clone this repository, I used a virtual environment for the development of this small project. Run the following commands
