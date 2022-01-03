@@ -1,0 +1,16 @@
+<!-- entries/templates/entries/entry_confirm_delete.html -->
+
+{% extends "entries/base.html" %}
+{% block content %}
+    <form method="post">{% csrf_token %}
+        <p>
+            ¿Estas seguro que quieres borrarlo
+            <em>"{{ entry.title }}"</em>
+            creado en {{ entry.date_created|date:'Y-m-d' }}?
+        </p>
+        <input type="submit" value="Confirmar">
+    </form>
+    <a href="{% url 'entry-detail' entry.id %}">
+        <button>Cancelar</button>
+    </a>
+{% endblock %}
